@@ -1,7 +1,60 @@
-* {
+@use './partials/variables' as var;
+
+*,
+*::after,
+*::before {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background: var.$background;
+  font-size: 1.6rem;
+  font-family: 'Inter', sans-serif;
+  color: var.$text;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var.$heading;
+}
+
+a {
+  text-decoration: none;
+  color: var.$highlight;
+}
+
+button {
+  border: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+a,
+button {
+  cursor: pointer;
+
+  transition: all 0.2;
+
+  &:hover {
+    filter: brightness(0.85);
+  }
+}
+
+input,
+textarea {
+  font-family: inherit;
+  font-size: inherit;
 }
 
 // TODO

@@ -1,1 +1,16 @@
 // TODO
+.headerWrapper {
+  height: 10.5rem;
+  max-width: 112rem;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+}
+
+@media (max-width: 766px) {
+  .headerWrapper {
+    height: 5rem;
+    justify-self: center;
+    align-self: center;
+  }
+}

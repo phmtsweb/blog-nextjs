@@ -1,1 +1,13 @@
-// TODO
+@use '../styles/partials/variables' as var;
+.mainContentHome {
+  padding: 4rem 0 8rem;
+}
+
+.buttonLoad {
+  color: var.$highlight;
+  line-height: 2.2rem;
+  font-size: 1.8rem;
+  text-align: justify;
+  background: transparent;
+  font-weight: 600;
+}
